@@ -10,9 +10,9 @@ return [
     'api' =>[
          //server config
         'ip'          => '0.0.0.0',
-        'port'        => '4203',
+        'port'        => '9501',
         'type'        => 'http',
-        'service'     => 'vnet-api',
+        'service'     => 'api',
         'pid_path'    => '/var/run',
         'gzip'        => 0,
         //swoole config

@@ -4,7 +4,6 @@ function get_instance($class){
     return ($class)::getInstance();
 }
 
-
 if (!function_exists('config')) {
     function config($name, $value = null)    {
         return get_instance('\Lightphp\Config')->get($name,$value);

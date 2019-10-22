@@ -11,16 +11,9 @@ return [
         // 应用的守护进程参数
         'parameter'   => '',
         'app_path'    => realpath(dirname(dirname(__DIR__)).'/apps/'),
-        'namespace'   => [
-            'server'  => 'server',
-        ],
-        'suffix'          =>  [
-            'html'        => '.html',
-            'php'         => '.php',    //url后缀
-        ],
     ],
     'server' =>[
-        'service'     => 'vnet-server',
+        'service'     => 'server',
         'pid_file'    => dirname(dirname(__DIR__)).'/runtime/pid/server.pid',
         'log_file'    => dirname(dirname(__DIR__)).'/logs/server/server.log',
     ]

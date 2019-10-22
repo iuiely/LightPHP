@@ -1,13 +1,13 @@
 #!/usr/bin/env php
 <?php
-defined('VNET_BIN_ROOT') or define('VNET_BIN_ROOT',realpath(dirname(__DIR__)).DIRECTORY_SEPARATOR);
+defined('BIN_ROOT') or define('BIN_ROOT',realpath(dirname(__DIR__)).DIRECTORY_SEPARATOR);
 
-$frame_config_file = VNET_BIN_ROOT.'frame/config/api.php';
+$frame_config_file = BIN_ROOT.'frame/config/api.php';
 
 if(file_exists($frame_config_file)){
     $config = require $frame_config_file;
 }else{
-   die("include file http.config.php failed\n");
+   die("include file $frame_config_file failed\n");
 }
 
 array_shift($argv);
@@ -22,5 +22,5 @@ if(isset($argv[0]) && $argv[0] != ''){
 }
 //print_r($config);
 
-require VNET_BIN_ROOT.'frame/http.php';
+require BIN_ROOT.'frame/http.php';
 \http::run($config);

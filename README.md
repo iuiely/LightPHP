@@ -12,14 +12,16 @@ PHP >= 7.2, <br>
 Swoole >= 4.2.12 <br>
 
 ## 快速使用
-#### 创建目录
+##### 创建目录
 mkdir /opt/php <br>
 cd /opt/php <br>
+
+##### 下载框架
 git clone https://github.com/iuiely/LightPHP.git <br>
 
-#### api 模式启动 <br>
+##### api 模式启动 <br>
 php /opt/php/LightPHP/bin/api start -d
 
-#### 守护进程模式启动 <br>
+##### 守护进程模式启动 <br>
 php /opt/php/LightPHP/bin/server start
 

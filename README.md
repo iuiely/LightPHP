@@ -6,15 +6,15 @@
   需要开发简单的api和后台守护进程的开发者
 
 ## 环境要求 
-  Linux, 
-  PHP >= 7.2, 
-  Swoole >= 4.2.12
-  eio
+  Linux, <br>
+  PHP >= 7.2, <br> 
+  Swoole >= 4.2.12 <br>
+  eio <br>
 
 ## 快速使用
 ##### 创建目录
-  mkdir /opt/php 
-  cd /opt/php
+  mkdir /opt/php  <br>
+  cd /opt/php <br>
 
 ##### 下载框架
   git clone https://github.com/iuiely/LightPHP.git <br>
